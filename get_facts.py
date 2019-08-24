@@ -1,12 +1,14 @@
-"""Download the facts to a file called 'facts'."""
+"""Download the facts and return them in a list."""
 import requests
 
 
-url = 'https://cat-fact.herokuapp.com/facts'
-req = requests.get(url)
+def get_facts():
+    url = 'https://cat-fact.herokuapp.com/facts'
+    req = requests.get(url)
 
-if req.status_code == 200:
-    facts = req.json()
-    with open('facts', 'w') as f:
+    if req.status_code == 200:
+        facts = req.json()
+        result = []
         for fact_object in facts['all']:
-            f.write(fact_object['text'] + '\n')
+            result.append(fact_object['text'])
+        return result
