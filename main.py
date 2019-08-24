@@ -18,4 +18,5 @@ bot = commands.Bot(command_prefix='!')
 async def cat(ctx):
     await ctx.send(choice(facts))
 
+print('Running the bot...')
 bot.run(API_KEY)
