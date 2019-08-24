@@ -20,6 +20,12 @@ venv/bin/activate.bat
 
 # install dependencies
 pip install -r requirements.txt
+
+# create the .env file from template
+mv env_template .env
+
+# edit the .env with your favorite text editor
+vim .env
 ```
 
 ## Running the bot
