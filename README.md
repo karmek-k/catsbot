@@ -1,7 +1,7 @@
 # catsbot
 Cat facts Discord bot
 
-Catsbot uses the [cat-facts](https://github.com/alexwohlbruck/cat-facts) API.
+Catsbot uses the [cat-facts](https://github.com/alexwohlbruck/cat-facts) and [TheCatAPI](https://thecatapi.com/).
 
 ## Installation
 Make sure that you have Python 3.x and pip installed.
