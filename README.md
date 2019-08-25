@@ -25,6 +25,7 @@ pip install -r requirements.txt
 mv env_template .env
 
 # edit the .env with your favorite text editor
+# set API_KEY to your bot token
 vim .env
 ```
 
