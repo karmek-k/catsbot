@@ -13,10 +13,12 @@ git clone https://github.com/karmek-k/catsbot.git
 python -m venv venv
 
 # activate it:
+
 # on Linux (and possibly Mac)
 source venv/bin/activate
+
 # on Windows
-venv/bin/activate.bat
+.\env\Scripts\activate
 
 # install dependencies
 pip install -r requirements.txt
